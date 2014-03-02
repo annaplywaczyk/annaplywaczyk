@@ -1,0 +1,19 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="wczytywanie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zad1_8cpp.html#a23c23a4e71065cf19c311b154d5258f6",tooltip="Funkcja wczytuj¹ca dane do wektora z pliku. Funkcja otwiera plik zadany przez u¿ytkownika, sprawdza czy plik zosta³ otwarty, je¿eli zosta³ otwarty wczytana jest liczba elementow pliku, nastepnie wczytywane sa wszystkie liczby do wektora z danymi."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="wypisz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zad1_8cpp.html#af3585718b2c90ae843d952ef08124531",tooltip="Funkcja wypisuj¹ca na ekran wszystkie elementy wektora. Funkcja wypisuje na ekran wsyztskie elemnty z ..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="wlaczStoper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zad1_8cpp.html#a588eeaaa2b07e0b3d714b779e0b3455f",tooltip="Funkcja zapamietuj¹ca czas koñcowy. Funkcja nale¿¹ca do biblioteki &quot;windows.h&quot;, stoper zostaje wy³¹czony..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="algorytm",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zad1_8cpp.html#acc25f8b64edccc5c6ccecb552634c616",tooltip="Funkcja wykonuj¹ca zadany algorytm na wektorze. Funkcja wykonuje zadany algorytm na wektorze wejsciowy..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="wylaczStoper",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zad1_8cpp.html#afbe85e6c70cbabd2ed5adabd0ce1b44b",tooltip="Funkcja zapamietuj¹ca czas poczatkowy. Funkcja nale¿¹ca do biblioteki &quot;windows.h&quot;, stoper zostaje w³¹czo..."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="porownanie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$zad1_8cpp.html#a2c79249af74d82457d56e9e844c473ed",tooltip="Funkcja porównuj¹ca dwa wektory. Funkcja porównuje dwa wektory, sprawdza czy wszystkie elemnty s¹ ze sob¹ równe..."];
+}

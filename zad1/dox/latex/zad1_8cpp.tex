@@ -1,0 +1,191 @@
+\section{Dokumentacja pliku zad1.\-cpp}
+\label{zad1_8cpp}\index{zad1.\-cpp@{zad1.\-cpp}}
+
+
+Program wczytuj¹cy plik, wykonuje algorytm na pliku i porównuje z prawid³owym plikiem. Program napisany jest w jednym pliku z u¿yciem funkcji.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+Wykres zaleÅ¼noÅ›ci zaÅ‚Ä…czania dla zad1.\-cpp\-:
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf wczytywanie} (const string \&tekst, vector$<$ int $>$ \&dane)
+\begin{DoxyCompactList}\small\item\em Funkcja wczytuj¹ca dane do wektora z pliku. Funkcja otwiera plik zadany przez u¿ytkownika, sprawdza czy plik zosta³ otwarty, je¿eli zosta³ otwarty wczytana jest liczba elementow pliku, nastepnie wczytywane sa wszystkie liczby do wektora z danymi. \end{DoxyCompactList}\item 
+void {\bf wypisz} (vector$<$ int $>$ \&dane)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuj¹ca na ekran wszystkie elementy wektora. Funkcja wypisuje na ekran wsyztskie elemnty z pliku na ekran w postaci wektora w kolumnie. \end{DoxyCompactList}\item 
+void {\bf algorytm} (vector$<$ int $>$ \&dane)
+\begin{DoxyCompactList}\small\item\em Funkcja wykonuj¹ca zadany algorytm na wektorze. Funkcja wykonuje zadany algorytm na wektorze wejsciowym. W naszym przypadku wektor pomno¿ony jest przez sta³¹ liczbê 2. \end{DoxyCompactList}\item 
+void {\bf porownanie} (vector$<$ int $>$ \&dane, vector$<$ int $>$ \&poprawne)
+\begin{DoxyCompactList}\small\item\em Funkcja porównuj¹ca dwa wektory. Funkcja porównuje dwa wektory, sprawdza czy wszystkie elemnty s¹ ze sob¹ równe. W ka¿dym wypadku zwraca nam komunikat albo ¿e wektory poddane analizie s¹ jednakowe b¹dŸ b³êdne. Do funkcji poddawna s¹ wektory jeden po wprowadzeniu z pliku i wykonaniu algorytmu oraz drugi, który jest ma byæ sprawdzeniem czy algorytm zosta³ prawid³owo wykonany. \end{DoxyCompactList}\item 
+L\-A\-R\-G\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R {\bf wylacz\-Stoper} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zapamietuj¹ca czas poczatkowy. Funkcja nale¿¹ca do biblioteki \char`\"{}windows.\-h\char`\"{}, stoper zostaje w³¹czony, aby zosta³ zmierzony czas wykonania algorytmu w programie. Funkcja nale¿¹ca do funkcji bool Query\-Performance\-Counter(\-\_\-out L\-A\-R\-G\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R $\ast$\-Ip\-Performance\-Count), funkcja ta zwraca wartosc niezerowa je¿eli w³aczenie zakoñczy siê sukcesem, natomiast w przeciwnym wypadku zostanie wyrzucony b³¹d i zwróci wartosc 0. Dla komputerów multiprocesorowych nie ma znaczenia, który jest u¿ywany. \end{DoxyCompactList}\item 
+L\-A\-R\-G\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R {\bf wlacz\-Stoper} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zapamietuj¹ca czas koñcowy. Funkcja nale¿¹ca do biblioteki \char`\"{}windows.\-h\char`\"{}, stoper zostaje wy³¹czony, aby zosta³ zmierzony czas wykonania algorytmu w programie, poprzez odjêcie czasu pocz¹tkowego od czasu koñcowego. Funkcja nale¿¹ca do funkcji bool Query\-Performance\-Counter(\-\_\-out L\-A\-R\-G\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R $\ast$\-Ip\-Performance\-Count), funkcja ta zwraca wartosc niezerowa je¿eli w³aczenie zakoñczy siê sukcesem, natomiast w przeciwnym wypadku zostanie wyrzucony b³¹d i zwróci wartosc 0. Dla komputerów multiprocesorowych nie ma znaczenia, który jest u¿ywany, mog¹ jedynie ró¿niæ siê minimalnie czasy. \end{DoxyCompactList}\item 
+int {\bf main} ()
+\begin{DoxyCompactList}\small\item\em Funkcja g³ówna. W funkcji tej u¿ywana jest komunikacja z u¿ytkownikiem programu, wykonywane s¹ funkcje. Wczytany zostaje plik, który\-: wypisany zostje na ekran, wykonana zostaje pêtla, która mierzy sredni czas wykonywania algorytmu przez program, nastêpnie u¿ytkownik wprowadza drugi plik, który zostaje porównany z wektorem na którym zosta³ wykonany algorytm. Na koñcu zwórcony zostaje sredni czas wykonywania algorytmu na wektorze w programie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegÃ³Å‚owy}
+
+
+Definicja w pliku {\bf zad1.\-cpp}.
+
+
+
+\subsection{Dokumentacja funkcji}
+\index{zad1.\-cpp@{zad1.\-cpp}!algorytm@{algorytm}}
+\index{algorytm@{algorytm}!zad1.cpp@{zad1.\-cpp}}
+\subsubsection[{algorytm}]{\setlength{\rightskip}{0pt plus 5cm}void algorytm (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{dane}
+\end{DoxyParamCaption}
+)}\label{zad1_8cpp_acc25f8b64edccc5c6ccecb552634c616}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em dane} & -\/ wektor, na ktorym wykonywany jest algorytm i po wykonaniu algorytmu wektor jest zmieniony, dziêki czemu nie musimy tworzyæ nowego wektora. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+(brak) 
+\end{DoxyReturn}
+
+
+Definicja w linii 154 pliku zad1.\-cpp.
+
+
+
+Oto graf wywoÅ‚ywaÅ„ tej funkcji\-:
+
+
+\index{zad1.\-cpp@{zad1.\-cpp}!main@{main}}
+\index{main@{main}!zad1.cpp@{zad1.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{zad1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definicja w linii 89 pliku zad1.\-cpp.
+
+
+
+Oto graf wywoÅ‚aÅ„ dla tej funkcji\-:
+
+
+\index{zad1.\-cpp@{zad1.\-cpp}!porownanie@{porownanie}}
+\index{porownanie@{porownanie}!zad1.cpp@{zad1.\-cpp}}
+\subsubsection[{porownanie}]{\setlength{\rightskip}{0pt plus 5cm}void porownanie (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{dane, }
+\item[{vector$<$ int $>$ \&}]{poprawne}
+\end{DoxyParamCaption}
+)}\label{zad1_8cpp_a2c79249af74d82457d56e9e844c473ed}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em dane} & -\/ wektor, który jest pierwszym wprowadzonyn plikiem przez u¿ytkownika i po wykanniu algorytmu. \\
+\hline
+\mbox{\tt in}  & {\em poprawne} & -\/ wektor, który wprowadzany jest do programu jako drugi przez u¿ytkownika, który ma byæ sprawdzeniem poprawnosci wykonania algorytmu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+(brak) 
+\end{DoxyReturn}
+
+
+Definicja w linii 160 pliku zad1.\-cpp.
+
+
+
+Oto graf wywoÅ‚ywaÅ„ tej funkcji\-:
+
+
+\index{zad1.\-cpp@{zad1.\-cpp}!wczytywanie@{wczytywanie}}
+\index{wczytywanie@{wczytywanie}!zad1.cpp@{zad1.\-cpp}}
+\subsubsection[{wczytywanie}]{\setlength{\rightskip}{0pt plus 5cm}void wczytywanie (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{tekst, }
+\item[{vector$<$ int $>$ \&}]{dane}
+\end{DoxyParamCaption}
+)}\label{zad1_8cpp_a23c23a4e71065cf19c311b154d5258f6}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em tekst} & -\/ zmienna, która zostaje wprowadzona przez u¿ytkownika do programu \\
+\hline
+\mbox{\tt in}  & {\em dane} & -\/ wektor, do którego zapisywane s¹ wszystkie elementy pliku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+(brak) 
+\end{DoxyReturn}
+
+
+Definicja w linii 124 pliku zad1.\-cpp.
+
+
+
+Oto graf wywoÅ‚ywaÅ„ tej funkcji\-:
+
+
+\index{zad1.\-cpp@{zad1.\-cpp}!wlacz\-Stoper@{wlacz\-Stoper}}
+\index{wlacz\-Stoper@{wlacz\-Stoper}!zad1.cpp@{zad1.\-cpp}}
+\subsubsection[{wlacz\-Stoper}]{\setlength{\rightskip}{0pt plus 5cm}L\-A\-R\-G\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R wlacz\-Stoper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{zad1_8cpp_a588eeaaa2b07e0b3d714b779e0b3455f}
+
+
+Definicja w linii 174 pliku zad1.\-cpp.
+
+
+
+Oto graf wywoÅ‚ywaÅ„ tej funkcji\-:
+
+
+\index{zad1.\-cpp@{zad1.\-cpp}!wylacz\-Stoper@{wylacz\-Stoper}}
+\index{wylacz\-Stoper@{wylacz\-Stoper}!zad1.cpp@{zad1.\-cpp}}
+\subsubsection[{wylacz\-Stoper}]{\setlength{\rightskip}{0pt plus 5cm}L\-A\-R\-G\-E\-\_\-\-I\-N\-T\-E\-G\-E\-R wylacz\-Stoper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{zad1_8cpp_afbe85e6c70cbabd2ed5adabd0ce1b44b}
+
+
+Definicja w linii 183 pliku zad1.\-cpp.
+
+
+
+Oto graf wywoÅ‚ywaÅ„ tej funkcji\-:
+
+
+\index{zad1.\-cpp@{zad1.\-cpp}!wypisz@{wypisz}}
+\index{wypisz@{wypisz}!zad1.cpp@{zad1.\-cpp}}
+\subsubsection[{wypisz}]{\setlength{\rightskip}{0pt plus 5cm}void wypisz (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{dane}
+\end{DoxyParamCaption}
+)}\label{zad1_8cpp_af3585718b2c90ae843d952ef08124531}
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\tt in}  & {\em dane} & -\/ wektor, w którym zapisane s¹ wszystkie elemnty pliku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+(brak) 
+\end{DoxyReturn}
+
+
+Definicja w linii 146 pliku zad1.\-cpp.
+
+
+
+Oto graf wywoÅ‚ywaÅ„ tej funkcji\-:
+
+

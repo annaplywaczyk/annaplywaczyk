@@ -1,0 +1,12 @@
+/*!
+* \mainpage Program wyliczajacy czas wykonywanego alorytmu
+* \author Anna Plywaczyk, 200340
+* \date 02.03.2014
+* \version 0,1
+
+* Aplikacja porozumiewa sie z uzytkowniem. Prosi o podanie nazwy pliku, na ktorym ma byc wykonany algorytm.
+* W programie zostanie wlaczony stoper, ktorym zmierzymy czas w jakim algorytm zostanie wykonany. Pomiar czasu
+* zostanie wykonany kilkakrotnie i na ekran zostanie wypisana wartosc srednia. Aplikacja ponownie poprosi o podanie nazwy pliku, 
+* ktory ma zostac porownany z plikiem pomnozonym przez 2. Jezeli wektory beda jednakowe program zworoci komunikat o tym iz 
+* mnozenie zostalo wykonane poprawnie w przeciwnym wypadku zostanie zwrocony komunikat o blednym wykonaniu algorytmu.
+*/

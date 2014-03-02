@@ -1,0 +1,58 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage{amssymb}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large My Project }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.1.2}\\
+\vspace*{0.5cm}
+{\small N, 2 mar 2014 21:47:19}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\chapter{Program wyliczajacy czas wykonywanego alorytmu}
+\label{index}\input{index}
+\chapter{Indeks plików}
+\input{files}
+\chapter{Dokumentacja plików}
+\input{strona_8dox}
+\input{zad1_8cpp}
+\printindex
+\end{document}
